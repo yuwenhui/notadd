@@ -1,0 +1,16 @@
+type Query {
+  sendMessage(name: String!): SendMessageResponse
+  verifyMessage(mobile: String!): VerifyMessageResponse
+}
+
+type SendMessageResponse {
+  code: Int
+  message: String
+  data: String
+}
+
+type VerifyMessageResponse {
+  code: Int
+  message: String
+  data: String
+}

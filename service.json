@@ -1,0 +1,76 @@
+{
+  "apps": [
+    {
+      "name": "nt-module-user",
+      "script": "./node_modules/.bin/ts-node",
+      "args": "-r ./node_modules/tsconfig-paths/register src/main.ts",
+      "cwd": "../nt-module-user",
+      "watch": true,
+      "ignore_watch": [
+        "node_modules",
+        "package.json",
+        ".git/*"
+      ],
+      "instances": "1",
+      "exec_mode": "fork",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    {
+      "name": "nt-rpc-demo",
+      "script": "./node_modules/.bin/ts-node",
+      "args": "-r ./node_modules/tsconfig-paths/register src/main.ts",
+      "cwd": "../nt-rpc-demo",
+      "watch": true,
+      "ignore_watch": [
+        "node_modules",
+        "package.json",
+        ".git/*"
+      ],
+      "instances": "1",
+      "exec_mode": "fork",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    {
+      "name": "nt-module-sms",
+      "script": "./node_modules/.bin/ts-node",
+      "args": "-r ./node_modules/tsconfig-paths/register src/main.ts",
+      "cwd": "../nt-module-sms",
+      "watch": true,
+      "out_file": "../logs/nt-module-sms.log",
+      "error_file": "../logs/nt-module-sms-err.log",
+      "ignore_watch": [
+        "node_modules",
+        "package.json",
+        ".git/*"
+      ],
+      "instances": "1",
+      "exec_mode": "fork",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    {
+      "name": "notadd",
+      "script": "./node_modules/.bin/ts-node",
+      "args": "-r ./node_modules/tsconfig-paths/register src/main.ts",
+      "cwd": "../notadd",
+      "watch": true,
+      "out_file": "../logs/notadd.log",
+      "error_file": "../logs/notadd-err.log",
+      "ignore_watch": [
+        "node_modules",
+        "package.json",
+        ".git/*"
+      ],
+      "instances": "1",
+      "exec_mode": "fork",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 export interface Permission {
-    name: string;
-    readonly identify: string;
-    readonly action: string;
+  name: string
+  readonly identify: string
+  readonly action: string
 }

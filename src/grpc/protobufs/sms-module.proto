@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package nt_module_sms;
+
+service SmsService {
+  rpc SendMessage (SendMessageRequest) returns (SendMessageResponse) { }
+  rpc VerifyMessage (VerifyMessageRequest) returns (VerifyMessageResponse) { }
+}
+
+message SendMessageRequest {
+  string name = 1;
+}
+
+message SendMessageResponse {
+  string msg = 1;
+}
+
+message VerifyMessageRequest {
+  string mobile = 1;
+}
+
+message VerifyMessageResponse {
+  string msg = 1;
+}
